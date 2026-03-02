@@ -7,6 +7,29 @@ const profile = ref({
   slogan: 'Full Stack Developer and Teacher',
   imageURL:
     'https://img.freepik.com/premium-photo/cartoon-girl-with-glasses-brown-hair-generative-ai_1034986-18129.jpg',
+  links: [
+    {
+      id: 1,
+      title: 'Github',
+      url: 'https://github.com/Lguille6',
+      icon: 'code',
+      description: 'Check out my projects',
+    },
+    {
+      id: 2,
+      title: 'Linkedin',
+      url: 'https://Linkedin.com/',
+      icon: 'briefcase',
+      description: 'Connect with me professionally',
+    },
+    {
+      id: 3,
+      title: 'Vue Expense Splitter',
+      url: 'https://github.com/Lguille6/expense-splitter-vue',
+      icon: 'github',
+      description: 'checkout my Vue.js project',
+    },
+  ],
 })
 </script>
 
@@ -32,8 +55,12 @@ const profile = ref({
     <!-- Link List -->
     <div class="max-e-w=md flex w-full flex-col gap-4">
       <LinkCard
-        v-for="x of [1, 2, 3]"
-        :key="x"
+        v-for="link in profile.links"
+        :key="link.id"
+        :title="link.title"
+        :url="link.url"
+        :description="link.description"
+        :icon="link.icon"
       />
     </div>
 

@@ -6,8 +6,8 @@ const bio = ref({
   avatar:
     'https://img.freepik.com/premium-photo/cartoon-girl-with-glasses-brown-hair-generative-ai_1034986-18129.jpg',
   about:
-    'I am a passionate full-stack developer with experience building modern web applications.I specialize in Vue.js and React, and Node.js. I love creating beautiful, user-friendly interfaces that make a difference.',
-  skills: ['Vue.js', 'React', 'Typescript', 'Node.js', 'Tailwind CSS'],
+    ' Ambitious Cybersecurity graduate with a strong foundation in network security, threat analysis, and ethical hacking. Proficient in Python and Linux certified. Eager to apply hands-on skills in vulnerablility assessment and incident response to protect organizational assets.',
+  skills: ['networking', 'cloud security', 'Linux', 'Node.js', 'Tailwind CSS'],
   email: 'lguille6@stu.southtexascollege.edu',
   location: 'Edinburg, Tx',
 })
